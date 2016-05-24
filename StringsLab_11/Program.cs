@@ -142,27 +142,26 @@ namespace StringsLab_11
             list.Add(new StringDecimal("150"));
             list.Add(new StringDecimal(25));
             list.Add(new StringBase("abc"));
-
             Console.WriteLine("{0} == {1} is {2}", list[0], list[1], list[0] == list[1]);
-
-            foreach (StringBase element in list)
-            {
-                Console.Write("{0}\t", element);
-            }
+            Console.WriteLine("{0} > {1} is {2}", list[0], list[1], list[0] > list[1]);
+            foreach (StringBase element in list) Console.Write("{0}\t", element);
             Console.WriteLine("");
 
             StringBase[] m = new StringBase[3];
             m[0] = new StringDecimal("20");
             m[1] = new StringDecimal("150");
             m[2] = new StringBase("Bill Gates");
-            Console.WriteLine("{0} + {1} = {2}", m[0], m[1], m[0] + m[1]);
+            Console.WriteLine("\n{0} + {1} = {2}", m[0], m[1], m[0] + m[1]);
+            Console.WriteLine("");
 
-
-
-
-
-
-
+            Stack<StringBase> st = new Stack<StringBase>();
+            st.Push(new StringBase("Sergey Brin"));
+            st.Push(new StringBase("Mark Zuckerberg"));
+            st.Push(new StringDecimal(1998));
+            st.Push(new StringDecimal(2016));
+            Console.WriteLine(st.Pop() - st.Pop());
+            Console.WriteLine(st.Pop());
+            Console.WriteLine(st.Pop());
             Console.WriteLine("");
         }
     }
