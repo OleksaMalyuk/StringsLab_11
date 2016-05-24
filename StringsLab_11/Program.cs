@@ -145,10 +145,24 @@ namespace StringsLab_11
 
             Console.WriteLine("{0} == {1} is {2}", list[0], list[1], list[0] == list[1]);
 
-            foreach(StringBase element in list)
+            foreach (StringBase element in list)
             {
                 Console.Write("{0}\t", element);
             }
+            Console.WriteLine("");
+
+            StringBase[] m = new StringBase[3];
+            m[0] = new StringDecimal("20");
+            m[1] = new StringDecimal("150");
+            m[2] = new StringBase("Bill Gates");
+            Console.WriteLine("{0} + {1} = {2}", m[0], m[1], m[0] + m[1]);
+
+
+
+
+
+
+
             Console.WriteLine("");
         }
     }
