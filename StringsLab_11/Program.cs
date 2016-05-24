@@ -10,6 +10,7 @@ namespace StringsLab_11
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
