@@ -138,7 +138,18 @@ namespace StringsLab_11
     {
         static void Main()
         {
+            List<StringBase> list = new List<StringBase>();
+            list.Add(new StringDecimal("150"));
+            list.Add(new StringDecimal(25));
+            list.Add(new StringBase("abc"));
 
+            Console.WriteLine("{0} == {1} is {2}", list[0], list[1], list[0] == list[1]);
+
+            foreach(StringBase element in list)
+            {
+                Console.Write("{0}\t", element);
+            }
+            Console.WriteLine("");
         }
     }
 }
